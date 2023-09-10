@@ -14,8 +14,19 @@ ul {
     padding: 0 48px;
 }
 
+/* overall */
+
 .container {
     background: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.header {
+    display: flex;
 }
 
 .title {
@@ -25,6 +36,13 @@ ul {
     margin-bottom: 8px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 450px;
+}
+
 .info {
     font-size: 18px;
     color: #E5E7EB;
@@ -32,9 +50,17 @@ ul {
 }
 
 .logo {
-    height: 30px;
-    width: 32px;
-    flex-shrink: 0;
+    font-size: 24px;
+    color: #F9FAF8;
+    align-self: center;
+    max-width: 450px;
+}
+
+.boat {
+    display: flex;
+    height: auto;
+    max-width: 500px;
+    padding: 24px;
 }
 
 .signup {
@@ -44,23 +70,43 @@ ul {
     color: white;
     font-style: 'Roboto' sans-serif;
     border-style: none;
-}
-
-.content,
-.boat {
-    height: auto;
-    width: 330px;
-    margin: 40px;
-    flex: 1;
-    max-width: 330px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
+    align-self: flex-start;
 }
 
 .main {
     display: flex;
-    justify-content: center;
 }
+
+/* end of the first main section */
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.information {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    margin: 24px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.verse, 
+.text {
+    height: 200px;
+    width: 200px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+

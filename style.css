@@ -20,13 +20,16 @@ ul {
     background: #1F2937;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex: 1;
+    min-width: 900px;
+    max-width: 100%;
+    flex-shrink: 1;
 }
 
 .header {
     display: flex;
+    flex-shrink: 1;
 }
 
 .title {
@@ -40,7 +43,8 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 450px;
+    width: 450px;
+    flex-shrink: 1;
 }
 
 .info {
@@ -54,12 +58,14 @@ ul {
     color: #F9FAF8;
     align-self: center;
     max-width: 450px;
+    flex-shrink: 1;
 }
 
-.boat {
+.boat,
+.content {
     display: flex;
     height: auto;
-    max-width: 500px;
+    width: 500px;
     padding: 24px;
 }
 
@@ -69,12 +75,13 @@ ul {
     border-radius: 8px;
     color: white;
     font-style: 'Roboto' sans-serif;
-    border-style: none;
     align-self: flex-start;
 }
 
 .main {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* end of the first main section */
@@ -84,6 +91,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-basis: 700px;
 }
 
 .information {
@@ -110,3 +118,76 @@ ul {
     flex-direction: column;
 }
 
+/* end of second section */
+
+.big-container {
+    background-color: #E5E7EB;
+    display: flex;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 36px;
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    max-width: 1200px;
+}
+
+.speaker {
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.big {
+    display: flex;
+    flex-direction: column;
+}
+
+/* end of third section */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid white;
+    background-color: #3882F6;
+    border-radius: 8px;
+    color: white;
+    flex-basis: 800px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.call {
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+}
+
+.call-button {
+    display: flex;
+    background-color: #3882F6;
+    padding: 6px 24px;
+    border-radius: 8px;
+    color: white;
+    font-style: 'Roboto' sans-serif;
+    align-self: flex-start;
+    flex-shrink: 0;
+}
+
+.action {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.call,
+.call-button {
+    display: flex;
+    align-self: center;
+}
